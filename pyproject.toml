@@ -1,15 +1,13 @@
-[project]
-name = "fastapi-zero"
+[tool.poetry]
+name = "fastapi_zero"
 version = "0.1.0"
 description = ""
-authors = [
-    {name = "Cauã Carlos",email = "carlos.caua@escolar.ifrn.edu.br"}
-]
+authors = ["Cauã Carlos <carlos.caua@escolar.ifrn.edu.br>"]
 readme = "README.md"
-requires-python = ">=3.13"
-dependencies = [
-]
 
+[tool.poetry.dependencies]
+python = ">=3.13"
+fastapi = {extras = ["standard"], version = "^0.136.0"}
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
